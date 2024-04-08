@@ -1,0 +1,169 @@
+
+
+body, ul {
+    margin: 0;
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    background-color: #574128; 
+    padding: 10px; 
+}
+
+/* navigation bar */
+#mainNav {
+    background-color:  #dbda8cf5; 
+    width: 100%;
+}
+
+#mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+#mainNav li {
+    float: left;
+    flex: 1;
+}
+
+#mainNav a {
+    display: block;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+
+}
+
+#mainNav a:hover {
+    background-color: #bcc473; 
+} 
+
+.logo img {
+    max-height: 50px; 
+    margin-right: 10px; 
+}
+.long-image {
+    width: 100%;
+    height: auto;
+    display: block;
+} 
+.container {
+    position: relative;
+    width: 100%;
+    
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; 
+   
+}
+
+h1 {
+    font-size: 80px; 
+    margin: 0; 
+}
+
+.container.hover {
+    position: relative;
+}
+
+.container.hover .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-sizing: border-box;
+    font-size: 45px;
+    color: #fff;
+    max-width: 80%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container.hover:hover .text {
+    opacity: 5;
+}
+.container.hover .image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+/*footer*/
+
+footer {
+    background-color: #8f6d46;
+    color: #fff;
+    padding: 20px;
+    text-align: center; 
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.contact,
+.social-media {
+    flex: 1;
+    text-align: center;
+}
+
+.contact h3,
+.social-media h3 {
+    font-size: 16px;
+    margin-bottom: 10px; 
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) {
+
+    #mainNav {
+        position: relative;
+    }
+
+    #mainNav ul {
+        flex-direction: column;
+        align-items: center; 
+        flex-wrap: wrap;
+    }
+
+    #mainNav li {
+        flex: 1;
+        width: 100%;
+    }
+    .long-image {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 40px; 
+        margin: 0; 
+    } 
+    h2 {
+        font-size: 20px; 
+    }
+
+    .text p {
+        font-size: 10px; 
+        line-height: 1.6; 
+       
+    }
+
+    
+}

@@ -1,0 +1,44 @@
+{
+    "header": {
+      "logoSrc": "images/Elephant rustic wild animal logo.png",
+      "navLinks": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "Introduction", "url": "intro.html" },
+        { "text": "Dep. Conservation", "url": "conservation.html" },
+        { "text": "leopard", "url": "leapard.html" },
+        { "text": "Other Animals", "url": "animal.html" }
+      ]
+    },
+    
+    "mainContent": {
+      "introduction": {
+        "title": "Indigenous Animals In Sri Lanka",
+        "description": "Sri Lanka is home to a diverse array of indigenous animals, including the iconic Sri Lankan elephant, the elusive Sri Lankan leopard, the unique toque macaque, the distinctive purple-faced Langur, the sloth bear, the national bird of Sri Lanka, the vibrant Sri Lanka junglefowl, the distinctive hump-nosed lizard, and the spiky Ceylon Spiny Mouse. These animals are crucial to the island's ecosystems and are often protected within national parks and wildlife sanctuaries to ensure their survival. Their unique characteristics make them a symbol of the island's rich biodiversity."
+      },
+      "linksToNationalParks": [
+        {
+          "parkName": "Yala National Park",
+          "imageSrc": "images/yala link.jpg",
+          "url": "yala.html"
+        },
+        {
+          "parkName": "Wilpattu National Park",
+          "imageSrc": "images/wilpattu link.jpg",
+          "url": "wilpattu.html"
+        }
+      ]
+    },
+  
+    "footer": {
+      "contact": {
+        "email": "wildlife@gmail.com",
+        "phone": "+1 (555) 123-4567"
+      },
+      "socialMediaLinks": [
+        { "platform": "Facebook", "url": "https://www.facebook.com/" },
+        { "platform": "Twitter", "url": "https://twitter.com/?lang=en" }
+      ],
+      "copyright": "&copy; 2023 Wildlife Sri Lanka. All rights reserved."
+    }
+  }
+  

@@ -1,0 +1,46 @@
+{
+    "header": {
+      "logoSrc": "images/Elephant rustic wild animal logo.png",
+      "navLinks": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "Introduction", "url": "intro.html" },
+        { "text": "Dep. Conservation", "url": "conservation.html" },
+        { "text": "leopard", "url": "leapard.html" },
+        { "text": "Other Animals", "url": "animal.html" }
+      ]
+    },
+  
+    "mainContent": {
+      "title": "Wilpattu National Park",
+      "sections": [
+        {
+          "title": "Introduction",
+          "imageSrc": "images/Wilpattu history 2 (1).jpg",
+          "description": "Wilpattu National Park, Sri Lanka's largest and oldest game reserve, is home to endemic species like Asian Elephants, Sri Lankan Leopards, and Sri Lankan Sloth Bears, and is located near the north-west coast's copper-sand beaches and Cultural Triangle ruins."
+        },
+        {
+          "title": "History",
+          "imageSrc": "images/Wilpattu history.jpg",
+          "description": "Wilpattu National Park, a 13,500-hectare wildlife sanctuary, was elevated to national park status in 1938. The park's history begins with the copper shoreline at Kudiramalai, believed to have been the landing spot of Indian Prince Vijaya in the 5th century BC. The region's name, Thambapanni or the 'colour of copper', was derived from the reddish sand that stained Prince Vijaya's hands and feet. The park contains 68 archeological sites."
+        },
+        {
+          "title": "Location",
+          "imageSrc": "images/wilpattu location 2.jpg",
+          "description": "Wilpattu National Park is located in Sri Lanka's north west, 35km west of Anuradhapura and 32km north of Puttalam. It takes 90 minutes to reach from Uga Ulagalla and a 4-hour drive from Uga Residence in Colombo. The park's main entrance is Hunuvilagama, offering 10-kilometers of beautiful lowland forest."
+        }
+      ]
+    },
+  
+    "footer": {
+      "contact": {
+        "email": "wildlife@gmail.com",
+        "phone": "+1 (555) 123-4567"
+      },
+      "socialMediaLinks": [
+        { "platform": "Facebook", "url": "https://www.facebook.com/" },
+        { "platform": "Twitter", "url": "https://twitter.com/?lang=en" }
+      ],
+      "copyright": "&copy; 2023 Wildlife Sri Lanka. All rights reserved."
+    }
+  }
+  

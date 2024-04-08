@@ -1,0 +1,47 @@
+{
+    
+    "headerLinks": [
+      { "text": "Home", "url": "index.html" },
+      { "text": "Introduction", "url": "intro.html" }
+    ],
+  
+    
+    "longImage": {
+      "src": "images/take 4.jpg",
+      "alt": "Long Image Description",
+      "title": "INTRODUCTION TO SRI LANKAN WILDLIFE"
+    },
+  
+    
+    "mainContentSections": [
+      {
+        "title": "Discover Sri Lanka's Wildlife Wonders",
+        "description": "The island of Sri Lanka is home to a diverse array of wildlife...",
+        "items": ["Birds Of Sri Lanka", "Mammals Of Sri Lanka"]
+      },
+      {
+        "title": "Birds Of Sri Lanka",
+        "description": "Birdwatching in Sri Lanka is a delight for birders...",
+        "image": { "src": "images/brids.jpg", "alt": "Image Description" }
+      }
+    ],
+  
+    
+    "footer": {
+      
+      "contact": {
+        "email": "wildlife@gmail.com",
+        "phone": "+1 (555) 123-4567"
+      },
+  
+      
+      "socialMediaLinks": [
+        { "platform": "Facebook", "url": "https://www.facebook.com/" },
+        { "platform": "Twitter", "url": "https://twitter.com/?lang=en" }
+      ],
+  
+     
+      "copyright": "© 2023 Wildlife Sri Lanka. All rights reserved."
+    }
+  }
+  

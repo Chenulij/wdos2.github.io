@@ -1,0 +1,47 @@
+{
+    "headerLinks": [
+      { "text": "Home", "url": "index.html" },
+      { "text": "Introduction", "url": "intro.html" }
+    ],
+  
+    "mainContentSections": [
+      {
+        "title": "Bundula National Park",
+        "description": "Explore the avian wonders of Bundala National Park, a birdwatcher's paradise in Sri Lanka!...",
+        "image": { "src": "images/bundala -2.jpg", "alt": "Image Description" },
+        "map": { "src": "https://www.google.com/maps/d/embed?mid=1VGc2__2oW06Mq7qFgRdqY7_jqeg&hl=en&ehbc=2E312F", "width": 300, "height": 300 }
+      },
+      {
+        "title": "Gal Oya National Park",
+        "description": "Embark on an off-the-beaten-path adventure in Gal Oya National Park, a tranquil haven in Sri Lanka's remote east...",
+        "image": { "src": "images/gal oya.jpg", "alt": "Image Description" },
+        "map": { "src": "https://www.google.com/maps/d/embed?mid=1q2PGm0YCDbuNn0b1_kUPvPMruxo&hl=en&ehbc=2E312F", "width": 300, "height": 300 }
+      }
+    ],
+  
+    "tableContent": {
+      "animals": [
+        { "name": "Great Flamingo", "location": "Bundula National Park", "facts": "It is the largest and palest of the flamingo species", "threats": "Habitat loss due to human activity and expansion" },
+        { "name": "Elephant", "location": "Gal Oya National Park", "facts": "They're the world's largest land animal", "threats": "Conflict with humans" }
+      ],
+      "seaTurtle": {
+        "name": "Sea Turtle",
+        "location": "Kosgoda Turtle Hatchery",
+        "facts": "Sea turtles can live up to 50 years or more",
+        "threats": "Climate change"
+      }
+    },
+  
+    "footer": {
+      "contact": {
+        "email": "wildlife@gmail.com",
+        "phone": "+1 (555) 123-4567"
+      },
+      "socialMediaLinks": [
+        { "platform": "Facebook", "url": "https://www.facebook.com/" },
+        { "platform": "Twitter", "url": "https://twitter.com/?lang=en" }
+      ],
+      "copyright": "&copy; 2023 Wildlife Sri Lanka. All rights reserved."
+    }
+  }
+  

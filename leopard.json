@@ -1,0 +1,57 @@
+{
+    "header": {
+      "logoSrc": "images/Elephant rustic wild animal logo.png",
+      "navLinks": [
+        { "text": "Home", "url": "index.html" },
+        { "text": "Introduction", "url": "intro.html" },
+        { "text": "Dep. Conservation", "url": "conservation.html" },
+        { "text": "leopard", "url": "leapard.html" },
+        { "text": "Other Animals", "url": "animal.html" }
+      ]
+    },
+  
+    "mainContent": {
+      "leopardLocations": [
+        {
+          "title": "Horton Plains",
+          "description": "Sri Lanka's highlands, once covered in forest and home to wildlife, have been cleared by the British for coffee and tea cultivation. Horton Plains National Park, a UNESCO World Heritage Site, is a spectacular highland wilderness with endemic plants and animals. Leopards, feeding on Sambhur deer, can be seen in the park, with a trained eye and patience.",
+          "imageSrc": "images/horton plains.jpeg"
+        },
+        {
+          "title": "Veheragala",
+          "description": "Veheragala National Park, also known as Yala Block 5, is a popular alternative to Yala Block 5 and is known for its high density of leopards. The park, which borders the Veheragala reservoir, is less visited than its more famous counterpart. The park's gradual habituation and high prey animals like Spotted Deer and Grey Langur contribute to its leopard population. Combining this with Block 1 offers a unique landscape experience.",
+          "imageSrc": "images/Veheragala.jpeg"
+        },
+        {
+          "title": "Kumana National Park",
+          "description": "Kumana, a remote island in Sri Lanka, is known for its mysterious and awe-inspiring leopards. Legends suggest they are man-eaters, but these are actually the same species found in Yala. Despite incidents of man-eaters, the park's privacy and lack of large crowds make it one of Sri Lanka's best-kept secrets.",
+          "imageSrc": "images/kumana park.jpeg"
+        }
+      ],
+      "leopardThreats": [
+        {
+          "title": "Habitat loss",
+          "description": "One of the primary threats to leopards in Sri Lanka is habitat loss due to human activities such as deforestation, urbanization, and agricultural expansion. As human populations grow and encroach upon natural habitats, the available space for leopards to roam and find food diminishes, leading to conflicts with humans and a decline in their population.",
+          "imageSrc": "images/habitat loss.jpeg"
+        },
+        {
+          "title": "Human-Wildlife Conflict",
+          "description": "Leopards sometimes come into conflict with humans when they venture into villages or farmlands in search of food, mainly due to habitat loss and shrinking prey base. These conflicts can result in attacks on livestock or, in rare cases, pose a danger to human safety. In response, communities may resort to retaliatory killings, which further threaten the leopard population.",
+          "imageSrc": "images/conflict.jpeg"
+        }
+      ]
+    },
+  
+    "footer": {
+      "contact": {
+        "email": "wildlife@gmail.com",
+        "phone": "+1 (555) 123-4567"
+      },
+      "socialMediaLinks": [
+        { "platform": "Facebook", "url": "https://www.facebook.com/" },
+        { "platform": "Twitter", "url": "https://twitter.com/?lang=en" }
+      ],
+      "copyright": "&copy; 2023 Wildlife Sri Lanka. All rights reserved."
+    }
+  }
+  

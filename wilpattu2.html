@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is a site about the sri lankan Wildlife">
+        <title> Wilpattu National Park  </title> 
+        <link rel="stylesheet" href="styles/wilpattu.css"> 
+        <link rel="stylesheet" href="newsletter.css">
+    </head> 
+    <body class="body"> 
+        <header> 
+        <div class="logo"> <a href="index.html"> <img src="images/Elephant rustic wild animal logo.png"> </a> </div>
+        <nav id="mainNav"> 
+            <ul> 
+                <li> <a href="index2.html" target="_blank"> Home </a> </li>
+                <li> <a href="intro2.html " target="_blank"> Introduction</a></li>
+                <li> <a href="conservation2.html" target="_blank"> Dep. Conservation </a></li>
+                <li> <a href="leopard2.html" target="_blank"> leopard </a></li>
+                <li> <a href="animals2.html" target="_blank"> Other Animals </a></li> 
+                <li> <a href="index.html" target="_blank"> logout </a></li> 
+                <li>  <button id="saveButton" > Save </button></li>
+            </ul>
+        </nav>
+    </header> 
+    <div  contenteditable="true" id="contenteditable">
+    <section class="container"> 
+        <div class="wrapper">  
+            <div class="long-image">
+                <img src="images/wilpattu main 2.jpg" alt="Long Image Description" class="long-image">
+                <div class="content">
+                    <h1>  Wilpattu National Park  </h1>
+                </div>
+            </div>
+             </div>
+    </section>   
+
+
+    <section class="container hover"> 
+        <div class="content-container">
+         <div class="container">
+         <div class="wrapper"> 
+        <div class="image">
+          <img src="images/Wilpattu history 2 (1).jpg" alt="Image Description"> 
+          <div class="text">
+         <h2> <u> Introduction </u> </h2> 
+         <p> Wilpattu National Park, Sri Lanka's largest and oldest game reserve, is home to endemic species like Asian Elephants, Sri Lankan Leopards, and Sri Lankan Sloth Bears, and is located near the north-west coast's copper-sand beaches and Cultural Triangle ruins.</p>
+         </div>
+         </div>
+         </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="container hover"> 
+        <div class="content-container">
+         <div class="container">
+         <div class="wrapper"> 
+        <div class="image">
+          <img src="images/Wilpattu history.jpg" alt="Image Description"> 
+          <div class="text">
+            <h2> <u> History </u> </h2> 
+            <p> Wilpattu National Park, a 13,500-hectare wildlife sanctuary, was elevated to national park status in 1938. The park's history begins with the copper shoreline at Kudiramalai, believed to have been the landing spot of Indian Prince Vijaya in the 5th century BC. The region's name, Thambapanni or the 'colour of copper', was derived from the reddish sand that stained Prince Vijaya's hands and feet. The park contains 68 archeological sites.</p>
+            </div>
+         </div>
+         </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="container hover"> 
+        <div class="content-container">
+         <div class="container">
+         <div class="wrapper">  
+            <div class="image"> 
+                <a href="https://maps.app.goo.gl/cCkFqNcy1vUydG3m6" target="_blank">
+                <img src="images/wilpattu location 2.jpg" alt="Image Description">
+                </a>
+            </div> 
+            <div class="text"> 
+                <h2> <u> Location  </u> </h2> 
+                <p> Wilpattu National Park is located in Sri Lanka's north west, 35km west of Anuradhapura and 32km north of Puttalam. It takes 90 minutes to reach from Uga Ulagalla and a 4-hour drive from Uga Residence in Colombo. The park's main entrance is Hunuvilagama, offering 10-kilometers of beautiful lowland forest.</p>
+            </div>
+         </div>
+         </div>
+          </div>
+        </div>
+    </section>
+
+</section class="container hover">   
+<div class="content-container">
+    <div class="container">
+       
+       
+       </div>
+    </div>
+
+</section>  
+</div>
+<script>
+    document.getElementById('saveButton').addEventListener('click', function() {
+var content = document.getElementById('editableContent').innerHTML;
+saveContentToLocalStorage(content);
+alert('Content saved successfully!');
+});
+
+function saveContentToLocalStorage(content) {
+localStorage.setItem('editableContent', content);
+}
+
+window.onload = function() {
+let storedContent = localStorage.getItem('editableContent');
+if (storedContent) {
+document.getElementById('editableContent').innerHTML = storedContent;
+}
+};
+</script> 
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const saveButton = document.getElementById('saveButton');
+    const contenteditable = document.getElementById('contenteditable');
+
+    saveButton.addEventListener('click', function() {
+        const content = contenteditable.innerHTML;
+        saveContentToLocalStorage(content);
+        alert('Content saved successfully!');
+    });
+
+    function saveContentToLocalStorage(content) {
+        localStorage.setItem('contenteditable', content);
+    }
+
+    window.onload = function() {
+        let storedContent = localStorage.getItem('contenteditable');
+        if (storedContent) {
+            contenteditable.innerHTML = storedContent;
+        }
+    };
+});
+
+ </script>
+<footer>
+    <div class="footer-content">
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p>Email: wildlife@gmail.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </div>
+
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            
+            <a href="https://www.facebook.com/" target="_blank" > Facebook</a>
+            <a href="https://twitter.com/?lang=en" target="_blank"> Twitter </a>
+            
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2023 Wildlife Sri Lanka. All rights reserved.</p>
+    </div> 
+    <div class="newsletter">
+        <h8 class="letter">Subscribe to Our Newsletter</h8>
+        <form id="newsletterForm">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</footer>
+
+<script src="wilpattu.js"></script> 
+<script src="newsletter.js"></script>
+    </body>
+</html>
+

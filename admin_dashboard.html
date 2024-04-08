@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+    <title>Admin Dashboard</title>  
+
+    <style> 
+    body, ul {
+    margin: 0; 
+    
+  
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    background-color: #574128;
+    padding: 10px;  
+}
+   /*  navigation bar */
+#mainNav {
+    background-color:  #dbda8cf5; 
+    width: 100%;
+}
+
+#mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+#mainNav li {
+    float: left;
+    flex: 1;
+}
+
+#mainNav a {
+    text-align: center;
+    color: #141414;
+    display: block;
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+#mainNav a:hover {
+    background-color: #bcc473; 
+} 
+
+.body {
+    margin: 0; 
+   
+  }
+
+.logo img {
+    max-height: 50px; 
+    margin-right: 10px; 
+}
+
+   
+     /* Body styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color:  #dbda8cf5;     }
+    
+    /* Container styling */
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color:  #eeedaef5; 
+                border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Header styling */
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .header h1 {
+        font-size: 36px;
+        color: #574128;
+    }
+    
+    /* Section styling */
+    .section {
+        margin-bottom: 30px;
+    }
+    
+    .section-header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px; 
+        color:#574128;
+    }
+    
+    /* Newsletter subscriptions styling */
+    .newsletter-subscriptions {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .subscriber {
+        margin-bottom: 5px;
+    }
+    
+    .subscriber-email {
+        font-weight: bold;
+    }
+    
+    /* Footer styling */
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+    }
+    
+    .footer a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #0056b3;
+    } 
+   
+</style>
+
+</head> 
+<header>
+    <div class="logo"> <a href="index.html"> <img src="images/Elephant rustic wild animal logo.png"> </a> </div>
+    <nav id="mainNav"> 
+        <ul> 
+            <li> <a href="index.html" target="_blank"> Home </a> </li>
+            <li> <a href="intro.html" target="_blank"> Introduction</a></li>
+            <li> <a href="conservation.html" target="_blank"> Dep. Conservation </a></li>
+            <li> <a href="leapard.html" target="_blank"> leopard </a></li>
+            <li> <a href="animal.html" target="_blank"> Other Animals </a></li>
+            
+        </ul>
+    </nav>
+</header>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+    </div>
+    
+    <div class="section">
+        <div class="section-header">Newsletter Subscriptions</div>
+        <div class="newsletter-subscriptions" id="newsletterSubscriptions">
+           
+        </div>
+    </div>
+
+    
+
+    <div class="footer">
+        &copy; 2022 Admin Dashboard
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        const subscriptions = JSON.parse(localStorage.getItem("newsletterEmails"));
+
+        
+        const subscriptionsContainer = document.getElementById("newsletterSubscriptions");
+
+        //  if there are subscriptions to display
+        if (subscriptions && subscriptions.length > 0) {
+            
+            const subscriptionList = document.createElement("ul");
+
+           // a loop 
+            subscriptions.forEach(function(email) {
+                const listItem = document.createElement("li");
+                listItem.textContent = email;
+                subscriptionList.appendChild(listItem);
+            });
+
+           
+            subscriptionsContainer.appendChild(subscriptionList);
+        } else {
+           
+            subscriptionsContainer.textContent = "No newsletter subscriptions found.";
+        }
+    });
+</script>
+
+<script>
+   
+    // Check if the current user is an admin
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (currentUser && currentUser.role === 'admin') {
+       
+        const footer = document.querySelector('.footer');
+        const adminLink = document.createElement('a');
+        adminLink.href = 'index2.html'; 
+        adminLink.textContent = 'Go to home page';
+        footer.appendChild(adminLink);
+    }
+</script>
+
+</body>
+</html>
